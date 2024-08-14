@@ -7,8 +7,8 @@ const client = new MongoClient(url);
 
 async function dbConnect() {
   let result = await client.connect();
-  let db = result.db(database2);
-  return db.collection("Movies");
+  let db = result.db(database);
+  return db.collection("products");
 }
 
 module.exports = dbConnect;
